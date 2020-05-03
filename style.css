@@ -1,3 +1,10 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 :root{
     font-size:16px;
     font-family:'Open Sans';
@@ -12,7 +19,7 @@
 
 body{
     color:#000;
-    background:linear-gradient(135deg,#016070,#004b58);
+   /* background:linear-gradient(135deg,#016070,#004b58); */
     margin:0;
     padding:0;
     font-family: 'Raleway', sans-serif;
@@ -114,10 +121,8 @@ main{
     color:orange;
 }
 .home-wallpaper-bg{
-    position: absolute;
     background:url('/img/pacnw.jpg') no-repeat;
     height:100%;
-    width:100%;
     background-size: cover;
     background-position: center;
 }
@@ -126,13 +131,12 @@ main{
     content:'';
     height:100%;
     width:100%;
-    background:rgba(0,0,0,0.2);
+    background:rgba(1,96,112,0.2);
 }
 
 .content{
     /*background:rgba(255,255,255,0.4);*/
-    height:80vh;
-    margin:10vh 0;
+    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,7 +148,7 @@ main{
     text-align: center;
     text-transform: uppercase;
     font-weight:bolder;
-    font-size:5rem;
+    font-size:10rem;
     letter-spacing:0.3ch;
     color:white;
     margin:0;
@@ -156,7 +160,7 @@ main{
     text-align: center;
     text-transform: uppercase;
     font-weight:bolder;
-    font-size:1rem;
+    font-size:6rem;
     letter-spacing:0.3ch;
     color:orange;
     margin:0;
@@ -171,31 +175,157 @@ main{
     width: 100%;
     color:var(--text-primary);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.main-content:before{
+.name-container h3{
+    font-size: 10rem;
+    color: orange;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding:0;
+    margin:0;
+    line-height: 8rem;
+}
+
+.righttop-container{
+
+}
+.right-about-container{
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+}
+.rightbottom-container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.about-me,.creds-container,.about-img-container,.name-container{
+    padding:2rem;
+
+}
+
+
+.about-img-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-img-container h3{
+    font-size: 3rem;
+    color: orange;
+    text-align: center;
+    position: absolute;
+    top: -70px;
+    left:-70px;
+    width: 400px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.about-img{
+    background:url(../img/brady.jpg) no-repeat;
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.about-img:before{
+    position: absolute;
     content:"";
     height:100%;
     width:100%;
-    background:rgba(0,0,0,0.2);
-    position: absolute;
+    background:rgba(1,96,112,0.2);
+
 }
 
-.about-img-container{
-    background:white;
-    height:50%;
-    width:100%;
-    margin:auto auto;
+.about-me-content{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
 }
 
-.about-img-container h3{
+.about-me h3{
+
     font-size:3rem;
-    color:orange;
+    text-transform:uppercase;
+    display: block;
+    background:#016070;
+    color:#fff;
+    -moz-transform: skewX(-40deg);
+    -webkit-transform: skewX(-40deg);
+    -o-transform: skewX(-40deg);
+    -ms-transform: skewX(-40deg);
+    transform: skewX(-40deg);
 }
+
+.about-me h3:before{
+    content:"";
+    height:4px;
+    width: 50px;
+    background:#fff;
+    transform:translateX(-0%);
+    margin:1rem 0;
+    display: inline-block;
+
+}
+
+
+
+.creds-container h3{
+    font-size:3rem;
+    text-transform:uppercase;
+    display: block;
+    background:#016070;
+    color:#fff;
+    -moz-transform: skewX(-40deg);
+    -webkit-transform: skewX(-40deg);
+    -o-transform: skewX(-40deg);
+    -ms-transform: skewX(-40deg);
+    transform: skewX(-40deg);
+}
+.creds-container h3:before{
+    content:"";
+    height:4px;
+    width: 50px;
+    background:#fff;
+    transform:translateX(-0%);
+    margin:1rem 0;
+    display: inline-block;
+}
+
+.creds ul{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+}
+
+.creds ul li{
+margin:0.5rem 0;
+}
+
+
+
+
+
+.right-container{
+
+}
+
+
+
+
+
+
+
+
+
 
 @keyframes moveInTop{
     0%{
@@ -221,6 +351,36 @@ main{
 
 /*Small */
 @media only screen and (max-width:768px){
+
+    .about-img{
+        background:url(../img/brady.jpg) no-repeat;
+        height:50vh;
+        width:100%;
+        background-size: cover;
+        background-position: center;
+    
+        position: relative;
+    }
+
+
+    .about-me h3{
+        position: relative;
+        font-size:2rem;
+        text-transform:uppercase;
+        display: block;
+        text-align: center;
+    }
+
+    .about-img-container h3,.creds-container h3 {
+        font-size: 2rem;
+        top: -55px;
+        left: -80px;
+
+    }
+
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
     
     .navbar{
         bottom:0;
@@ -232,6 +392,8 @@ main{
     }
     .navbar-nav{
         flex-direction: row;
+        width: 100%;
+        background: var(--bg-primary);
     }
     main{
         margin:0;
@@ -255,7 +417,7 @@ main{
         text-align: center;
         text-transform: uppercase;
         font-weight:bolder;
-        font-size:2.5rem;
+        font-size:3rem;
         letter-spacing:0.3ch;
         color:white;
         margin:0;
@@ -267,7 +429,7 @@ main{
         text-align: center;
         text-transform: uppercase;
         font-weight:bolder;
-        font-size:1rem;
+        font-size:2rem;
         letter-spacing:0.3ch;
         color:orange;
         margin:0;
@@ -275,7 +437,9 @@ main{
         animation: moveInBottom 1s ease;
     }
     
-
+.name-container h3{
+    font-size:3rem;
+}
 
 }
 
