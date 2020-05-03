@@ -251,18 +251,29 @@ main{
     grid-template-rows: repeat(1,1fr);
 }
 
-.about-me h3{
-
-    font-size:3rem;
-    text-transform:uppercase;
-    display: block;
-    background:#016070;
-    color:#fff;
+.about-me .subtitle{
     -moz-transform: skewX(-40deg);
     -webkit-transform: skewX(-40deg);
     -o-transform: skewX(-40deg);
     -ms-transform: skewX(-40deg);
     transform: skewX(-40deg);
+    background:var(--pacific-nw-blue);
+    width:80%;
+    margin:0 0 2rem 0;
+}
+
+
+.about-me h3{
+    padding-left:1rem;
+    font-size:3rem;
+    text-transform:uppercase;
+    display: block;
+    color:#fff;
+    -moz-transform: skewX(40deg);
+    -webkit-transform: skewX(40deg);
+    -o-transform: skewX(40deg);
+    -ms-transform: skewX(40deg);
+    transform: skewX(40deg);
 }
 
 .about-me h3:before{
@@ -275,20 +286,34 @@ main{
     display: inline-block;
 
 }
-
-
-
-.creds-container h3{
-    font-size:3rem;
-    text-transform:uppercase;
-    display: block;
-    background:#016070;
-    color:#fff;
+.creds-container  .subtitle{
     -moz-transform: skewX(-40deg);
     -webkit-transform: skewX(-40deg);
     -o-transform: skewX(-40deg);
     -ms-transform: skewX(-40deg);
     transform: skewX(-40deg);
+    background:var(--pacific-nw-blue);
+    width:80%;
+    margin:0 0 2rem 0;
+}
+
+.about-me-content{
+    width:80%;
+    line-height:1.5rem;
+
+}
+
+.creds-container h3{
+    padding-left:1rem;
+    font-size:3rem;
+    text-transform:uppercase;
+    display: block;
+    color:#fff;
+    -moz-transform: skewX(40deg);
+    -webkit-transform: skewX(40deg);
+    -o-transform: skewX(40deg);
+    -ms-transform: skewX(40deg);
+    transform: skewX(40deg);
 }
 .creds-container h3:before{
     content:"";
@@ -310,6 +335,20 @@ main{
 margin:0.5rem 0;
 }
 
+.creds ul li a{
+    text-decoration: none;
+    color:var(--text-primary);
+    transition:color 200ms ease;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.creds ul li a:hover{
+    text-decoration: none;
+    color:orange;
+
+}
 
 
 
