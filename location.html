@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/6a6b9fad69.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6185436977.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -60,13 +61,45 @@
             </div>
         </div>
     </div>
-    <div class="main-content">
-
+    <div class="main-content-location">
+        <div class="left">
+            <div class="left-title"></div>
+            <div class="left-content"></div>
+            <div class="left-map"><div id="map"></div></div>
+        </div>
+        <div class="right">
+            <div class="right-top"></div>
+            <div class="right-middle"></div>
+            <div class="right-bottom"></div>
+        </div>
 
     </div>
 
     </main>
 
-    
+
+    <script>
+    var map;
+    function initMap() {
+
+        var options = {
+            zoom:12,
+            center:{lat: 39.730, lng: -104.998}
+        }
+
+       var map = new 
+       google.maps.Map(document.getElementById('map'), options);
+       
+       
+        var marker = new 
+        google.maps.Marker({
+            position:{lat: 39.730, lng: -104.998},
+            map:map
+        });
+    }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUvrGEF4GphwIjEdFuylWB7enAAWsKlY8&callback=initMap";
+    async defer></script>
 </body>
 </html>
