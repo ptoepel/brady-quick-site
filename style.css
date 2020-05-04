@@ -488,6 +488,52 @@ grid-template-columns: repeat(2,1fr);
                     background-size:cover;
                     position: relative;
                     }
+
+                    .right .right-middle .middle-top{
+                        background:orange;
+                        width:80%;
+                        -moz-transform: skewX(-40deg);
+                        -webkit-transform: skewX(-40deg);
+                        -o-transform: skewX(-40deg);
+                        -ms-transform: skewX(-40deg);
+                        transform: skewX(-40deg);
+                        margin:2rem auto;
+                    }
+                    .right .right-middle .middle-top h3{
+                        color:white;
+                        font-size:3rem;
+                        -moz-transform: skewX(40deg);
+                        -webkit-transform: skewX(40deg);
+                        -o-transform: skewX(40deg);
+                        -ms-transform: skewX(40deg);
+                        transform: skewX(40deg);
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    .right .right-middle .middle-content  {
+                        width:80%;
+                        margin:0 auto;
+                    }
+
+                    .right .right-middle .middle-content p {
+                        margin:3rem 0 ;
+                    }
+
+                    .right .right-middle .middle-content ul {
+                        list-style: none;
+                    }
+
+
+                    .right .right-middle .middle-content ul li{
+                        margin:1rem 0;
+                    }
+
+                    .right .right-middle .middle-content ul li address{
+                        list-style: none;
+                        text-transform: uppercase;
+                        
+                        font-weight: bolder;
+                    }
                     .right .right-middle:before{
                         content:"";
                         position: absolute;
@@ -520,10 +566,57 @@ grid-template-columns: repeat(2,1fr);
 
 
     }
+    .left .left-title .left-title-top{
+        background:var(--pacific-nw-blue);
+        width:80%;
+        -moz-transform: skewX(-40deg);
+        -webkit-transform: skewX(-40deg);
+        -o-transform: skewX(-40deg);
+        -ms-transform: skewX(-40deg);
+        transform: skewX(-40deg);
+        margin:2rem auto;
+    }
+    .left .left-title .left-title-top h3{
+        color:white;
+        font-size:3rem;
+        -moz-transform: skewX(40deg);
+        -webkit-transform: skewX(40deg);
+        -o-transform: skewX(40deg);
+        -ms-transform: skewX(40deg);
+        transform: skewX(40deg);
+        text-align: center;
+        text-transform: uppercase;
+    }
     .left .left-content{
         background:url('/img/co.jpg') no-repeat;
         background-size:cover;
         position: relative;
+    }
+
+    .left .left-title-content ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+
+    .left .left-title-content ul li{
+        margin:1rem 0;
+        border-bottom:2px solid var(--pacific-nw-blue);
+        padding:0.5rem 0;
+    }
+
+
+
+    .left .left-title-content ul li .day{
+        font-weight:bolder;
+        padding:0 1.5rem; 
+    }
+
+    .left .left-title-content ul li .day{
+
     }
     .left .left-content:before{
         content:"";
@@ -542,7 +635,34 @@ grid-template-columns: repeat(2,1fr);
         height:100%;
     }
 
+.services-content{
+    height:100vh;
+}
 
+.services-content ul{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-content ul li{
+    padding:3rem;
+    list-style: none;
+    }
+
+    .services-content ul li .card{
+        border:2px solid var(--text-primary);
+        height:10rem;
+    }
+    
+    .services-content ul li .card .card-icon-container{
+
+    }
+
+    .services-content ul li .card .card-icon-container i{
+        font-size:5rem;
+    }
 @keyframes moveInTop{
     0%{
         transform:translateY(-100%);
@@ -567,7 +687,19 @@ grid-template-columns: repeat(2,1fr);
 
 /*Small */
 @media only screen and (max-width:768px){
+    .services-content ul{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    .right .right-middle .middle-top h3 { 
+        font-size:1rem;
+    }
+    .left .left-title .left-title-top h3 {
+        font-size:1rem;
+    }
     .about-img{
         background:url(../img/brady.jpg) no-repeat;
         height:50vh;
