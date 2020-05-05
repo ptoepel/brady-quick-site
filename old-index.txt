@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilience - Home</title>
+    <script src="https://kit.fontawesome.com/6185436977.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/6a6b9fad69.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="/" class="nav-link">
+                    <i class="fab fa-strava"></i>
+                <span class="link-text">Resilience</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span class="link-text">About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">
+                    <i class="fas fa-notes-medical"></i>
+                    <span class="link-text">Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="location.html" class="nav-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="link-text">Location</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <i class="fal fa-envelope"></i>
+                    <span class="link-text">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="home-wallpaper-bg">
+        <div class="content">
+        <div class="title">
+            <h1>Resilience</h1>
+        </div>
+        <div class="subtitle">
+            <h2>Chiropractic &amp; Rehabilitation</h3>
+        </div>
+    </div>
+</div>
+    </main>
+
+    
+</body>
+</html>
